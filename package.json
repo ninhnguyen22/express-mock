@@ -1,6 +1,6 @@
 {
-  "name": "express-mock-server",
-  "version": "3.4.3",
+  "name": "nin-express-mock",
+  "version": "1.0.0",
   "description": "Mock server powered by Express.js",
   "main": "dist/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Belsi/express-mock-server.git"
+    "url": "git+https://github.com/ninhnguyen22/express-mock.git"
   },
   "keywords": [
     "mock",
@@ -24,9 +24,9 @@
   "222author": "Frantisek Belsan <frantisek.belsan@gmail.com> (https://github.com/Belsi)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Belsi/express-mock-server/issues"
+    "url": "https://github.com/ninhnguyen22/express-mock/issues"
   },
-  "homepage": "https://github.com/Belsi/express-mock-server#readme",
+  "homepage": "https://github.com/ninhnguyen22/express-mock#readme",
   "dependencies": {
     "body-parser": "1.19.0",
     "colors": "1.4.0",

@@ -1,9 +1,10 @@
-# express-mock-server
+# express-mock
 Mock server powered by Express.js
+Extend package express-mock-server(https://www.npmjs.com/package/express-mock-server) to support XML responses and introduce Morgan for log file generation
 
 ## Installation
 ```
-npm i -D express-mock-server
+npm i -D nin-express-mock
 ```
 
 ## Example of source file
