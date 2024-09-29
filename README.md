@@ -32,6 +32,35 @@ response: function(urlParams, qsParams, bodyParams) {
   ...
 ```
 
+Response xml
+```javascript
+module.exports = [
+  {
+    request: {
+      'method': 'GET',
+      'path': '/some-url'
+    },
+    response: {
+      'statusCode': 200,
+      'contentType': 'application/xml',
+      'body': {
+        'Users': {
+          'User': [
+            {
+              'id': 1,
+              'name': 'User1',
+            },
+            {
+              'id': 2,
+              'name': 'User2',
+            }
+          ]
+        }
+      },
+    }
+  }
+];
+
 ## Basic use
 
 ```javascript
@@ -46,7 +75,14 @@ var sources = [
 // this is default configuration
 var opt_serverConfig = {
   port: 8080,
-  controlApiUrl: '/api/v1'
+  controlApiUrl: '/api/v1',
+  logConfig: {
+    isLogEnabled: true,
+    logFormat: ':response-time ms :method :status :url :req-headers :req-body :req-query',
+    logFile: 'access.log',
+    logRotate: '1d',
+    logDir: path.join(__dirname, 'logs')
+  }
 };
 
 /**

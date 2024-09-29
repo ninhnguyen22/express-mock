@@ -3,6 +3,7 @@ const urls = {
   error: '/error',
   notFound: '/not-found',
   items: '/items',
+  xmlItems: '/xml-items',
   itemsLogo: '/items/logo',
   item: '/item/:id',
   itemHardId: '/item/hardId',

@@ -98,6 +98,33 @@ const sources = [
         };
       },
     },
+
+    // response with xml
+    {
+      request: {
+        method: 'GET',
+        path: urls.xmlItems,
+      },
+      response: {
+        statusCode: 200,
+        contentType: 'application/xml',
+        body: {
+          'Users': {
+            'User': [
+              {
+                'id': 1,
+                'name': 'User1',
+              },
+              {
+                'id': 2,
+                'name': 'User2',
+              }
+            ]
+          }
+        },
+      },
+    },
+
   ],
 ];
 
